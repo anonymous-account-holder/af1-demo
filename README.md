@@ -1,6 +1,6 @@
 # AF1 Experiment
 
-This directory contains code to run an experiment testing the AF1 circuit on a Llama 3 8B model.
+This directory contains demo code to run specifically the Table 4 experiment on the "Original" template, testing the AF1 circuit on a Llama 3 8B model. We hope this gives some more clarity into the code and mechanisms.
 
 ## Setup
 
@@ -8,21 +8,13 @@ It is recommended to use `conda` to manage dependencies.
 
 1.  **Create and activate a conda environment from the provided file:**
 
-    The file `full_eap_ig_env.yml` in the root directory contains the necessary dependencies.
+    The file `af1-env.yml` in the root directory contains the necessary dependencies.
 
     ```bash
-    conda env create -f ../full_eap_ig_env.yml
-    conda activate eap-ig
+    conda env create -f af1-env.yml
+    conda activate af1-env
     ```
-    Note: if you are not in the `af1-demo` directory, adjust the path to `full_eap_ig_env.yml` accordingly.
-
-2.  **Install additional packages:**
-
-    Some packages need to be installed or updated via pip.
-
-    ```bash
-    pip install torch transformer_lens tqdm
-    ```
+    Note: There may be additional unneeded packages in this yml. 
 
 ## Running the experiment
 
