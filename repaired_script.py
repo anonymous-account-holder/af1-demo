@@ -49,7 +49,7 @@ def main():
     print(f"Model loaded successfully")
     model.eval()
  
-    # exactly the 12 templates from Table 4 (including trailing spaces)
+    # fixed templates from table 4
     templates = {
         "Original": {
             "A+B": "{A}+{B}=",
